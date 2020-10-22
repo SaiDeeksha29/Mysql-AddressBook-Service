@@ -56,5 +56,12 @@ INSERT INTO address_book(firstName,lastName,Address,City,State,Zip,Phone,Email) 
 ### Contact of person belonging to particular state
 ```SELECT * FROM address_book WHERE State='Telangana';```
 
+## UC7 - Ability to understand the size of address book by City and State
+### Count contacts By city
+```SELECT city,COUNT(city) FROM address_book GROUP BY city;```
+```SELECT COUNT(city) FROM address_book;```
 
+### Count contacts By state
+```SELECT state,COUNT(state) FROM address_book GROUP BY state;```
+```SELECT COUNT(state) FROM address_book;```
 
