@@ -24,3 +24,13 @@ create table address_book
 ### Viewing the address book table
 ```DESCRIBE address_book;```
 
+## UC3 - Insert new contacts to address book
+```
+INSERT INTO address_book(firstName,lastName,Address,City,State,Zip,Phone,Email) VALUES(
+    -> 'Deeksha','Sai','Karampakkam','Chennai','TamilNadu',600010,888561875,'saideeksha@gmail.com'),
+    -> ('Divya','Sai','Shivajinagar','Hyderabad','Telangana',500019,891967665,'saidivya@gmail.com');
+```
+
+### View address book
+```SELECT*FROM address_book;```
+
