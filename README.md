@@ -32,5 +32,12 @@ INSERT INTO address_book(firstName,lastName,Address,City,State,Zip,Phone,Email) 
 ```
 
 ### View address book
-```SELECT*FROM address_book;```
+```SELECT * FROM address_book;```
 
+## UC4 - Ability To Edit Existing Contact with Name
+
+### Editing contact for given name
+```UPDATE address_book SET phone=878787777 WHERE firstName='Deeksha';```
+
+### View address book
+```SELECT * FROM address_book;```
