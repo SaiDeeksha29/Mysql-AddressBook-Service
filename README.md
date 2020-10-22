@@ -73,4 +73,17 @@ SELECT COUNT(state) FROM address_book;
 ### For a given city ,sort contacts in alphabetical order
 ```SELECT * FROM address_book WHERE city='Hyderabad' ORDER BY firstName;```
 
+## UC9 - Ability to identify each Address Book with name and Type.
+### Altering table
+```
+ALTER table address_book add AddressBookName varchar(200) AFTER Email;
+ALTER table address_book add Type varchar(200) AFTER Email;
+UPDATE address_book set type='Family' where firstName='Deeksha';
+UPDATE address_book set type='Friends' where firstName='Divya';
+UPDATE address_book set type='Professional' where firstName='Uma';
+UPDATE address_book set AddressBookName='Personal' where firstName='Uma';
+UPDATE address_book set AddressBookName='Casual' where firstName='Deeksha' or firstName='Divya';
+```
 
+### View address book
+```SELECT * FROM address_book;```
