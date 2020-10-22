@@ -91,3 +91,10 @@ UPDATE address_book set AddressBookName='Casual' where firstName='Deeksha' or fi
 ## UC10 - Ability to get number of contact persons(count by type)
 ```SELECT type,COUNT(type) FROM address_book GROUP BY type;```
 
+## UC11 - Ability to add person to both Friend and Family
+```
+INSERT INTO address_book(firstName,lastName,Address,City,State,Zip,Phone,Email,Type,AddressBookName) VALUES(
+    -> 'Sreenivasulu','Konda','Pragatinagar','Hyderabad','Telangana',500050,949876547,'sreenivasulu@gmail.com','Family','Personal'),
+    -> ('Chandan','Reddy','Vasanthnagar','Dilsukhnagar','Bangalore',400097,87008493,'chandanreddy@gmail.com','Friends','Personal');
+```
+
