@@ -87,3 +87,7 @@ UPDATE address_book set AddressBookName='Casual' where firstName='Deeksha' or fi
 
 ### View address book
 ```SELECT * FROM address_book;```
+
+## UC10 - Ability to get number of contact persons(count by type)
+```SELECT type,COUNT(type) FROM address_book GROUP BY type;```
+
